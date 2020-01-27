@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DatingApp.API.Migrations
 {
-    public partial class AddedUserEntity : Migration
+    public partial class AddUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace DatingApp.API.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    username = table.Column<string>(nullable: true),
+                    Username = table.Column<string>(nullable: true),
                     passwordHash = table.Column<byte[]>(nullable: true),
                     passwordSalt = table.Column<byte[]>(nullable: true)
                 },

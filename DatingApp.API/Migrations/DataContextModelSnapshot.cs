@@ -22,14 +22,14 @@ namespace DatingApp.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Username")
+                        .HasColumnType("TEXT");
+
                     b.Property<byte[]>("passwordHash")
                         .HasColumnType("BLOB");
 
                     b.Property<byte[]>("passwordSalt")
                         .HasColumnType("BLOB");
-
-                    b.Property<string>("username")
-                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
