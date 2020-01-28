@@ -1,7 +1,7 @@
-.vscode
-bin
-obj
-*.db
-*.db-shm
-*.db-wal
-appsettings.json
+##.vscode
+##bin
+##obj
+##*.db
+##*.db-shm
+##*.db-wal
+##appsettings.json
